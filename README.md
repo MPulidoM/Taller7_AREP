@@ -106,7 +106,7 @@ git clone https://github.com/MPulidoM/Taller6_AREP_2.git
 ```
 Se accede al directorio del proyecto:
 ```
-cd Taller6_AREP_2
+cd Taller7_AREP
 ```
 Damos el siguiente comando de Maven:
 ```
