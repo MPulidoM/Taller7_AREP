@@ -102,7 +102,7 @@ El proyecto es una aplicación web de inicio de sesión seguro que utiliza tecno
 
 Debemos clonar el repositorio:
 ```
-git clone https://github.com/MPulidoM/Taller6_AREP_2.git
+git clone https://github.com/MPulidoM/Taller7_AREP.git
 ```
 Se accede al directorio del proyecto:
 ```
