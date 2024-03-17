@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Seguro</title>
+    <style>
+        body {
+            background-color: #f0f0ff; background-image: url(https://i.pinimg.com/564x/7f/ba/0f/7fba0fa5950b02b0e6dd05d7ef308e91.jpg); background-position: center; background-size: cover;font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #FF94AC;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff0994;
+        }
+        #logmsg {
+            color: #131313;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<form action="/login" method="post">
+    <h1>Bienvenido :3 </h1>
+    <label for="user">User:</label>
+    <input type="text" id="user" name="user" placeholder="username" required />
+    <br />
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="pass" placeholder="password" required />
+    <br />
+    <input type="submit" value="Login" onclick="login(user, pass)" />
+</form>
+<div id="logmsg"></div>
+
+<script >
+    function login(user, pass) {
+        let url = "/login?user=" + user.value + "&pass=" + pass.value;
+
+        fetch(url, { method: "POST" })
+            .then((x) => x.text())
+            .then((y) => (document.getElementById("logmsg").innerHTML = y));
+    }
+</script>
+</body>
+</html>
