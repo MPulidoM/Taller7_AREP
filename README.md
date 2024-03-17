@@ -180,7 +180,7 @@ https://localhost:5000/index.html
 
 
 - Prueba del Despliegue:
-  [VIDEO DESPLIEGUE AWS](https://youtu.be/QtokbNk622A)
+  [VIDEO DESPLIEGUE AWS](https://www.youtube.com/watch?v=EPZ_m1F1zhY)
 
 ## Autores
 
