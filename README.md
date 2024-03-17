@@ -140,36 +140,38 @@ https://localhost:5000/index.html
 
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/ec5a559d-f0c4-4063-8e27-813dc1f28247)
 
-**Clave Inorrecta:**
+**Clave Incorrecta:**
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/68443452-9b5a-4af6-baa8-3f88e6cd0fda)
 
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/b71da068-e7b5-410e-bc84-5e9e1f570316)
 
 **Otros Usuarios:**
 
-
-Pruebas local
-
-
-
-
-
-
-
-
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/95fec903-edca-4df6-99e0-68fe9ca3cf03)
-
+![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/860535b3-cdfc-44c6-bc56-93cd724d845c)
 
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/56c76255-509c-470f-a304-6da0e508c9cf)
-![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/860535b3-cdfc-44c6-bc56-93cd724d845c)
+
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/0d935f46-d730-427e-be34-50fe8bd140df)
 
+- *AWS*
 
-AWS 
+**Corriendo el proyecto en la maquina**
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/6d2fb0da-ce92-46f0-88c7-de398bf952c6)
 
+
+**Prueba de Funcionamiento**
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/ea07f133-e148-4c8c-b8b0-db883ecf671b)
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/e96075dc-1a2a-4824-b123-3b8fdb0ded6f)
+
+
+
+
+
+
+
+
+
 
 
 
