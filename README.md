@@ -26,8 +26,6 @@ El proyecto contiene:
 
 ## Requisitos previos
 
-[Docker](https://www.docker.com/): Proporciona un entorno de contenedorización que garantiza la consistencia y portabilidad de la aplicación.
-
 [Maven](https://maven.apache.org/) : Con esta herramienta se creo la estructura del proyecto y se manejan las dependencias que se necesitan
 
 [Git](https://git-scm.com/) : Se basa en un sistema de control de versiones distribuido, donde cada desarrollador tiene una copia completa del historial del proyecto.
