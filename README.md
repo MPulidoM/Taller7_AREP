@@ -49,9 +49,19 @@ El proyecto está compuesto por tres clases Java y un archivo HTML con JavaScrip
 
 En cuanto a la arquitectura general del proyecto, tenemos tres clases Java y un archivo HTML con JavaScript. La clase PasswordHasher proporciona métodos para el hasheo y la validación de contraseñas utilizando el algoritmo SHA-3 de 256 bits. La clase SecureURLReader proporciona un método estático para leer el contenido de una URL de forma segura utilizando SSL y un almacén de confianza. La clase UsuariosDB crea una base de datos simulada de usuarios y contraseñas hasheadas utilizando un mapa de Java, inicializa el servidor Spark y configura una ruta GET en "/login" para autenticar a los usuarios. El archivo HTML proporciona un formulario de inicio de sesión con dos campos de entrada de texto para el nombre de usuario y la contraseña, y un botón de envío. El JavaScript en el archivo HTML maneja la presentación del formulario y la respuesta del servidor.
 
+## Escalar Arquitectura de Seguridad
+
+Para escalar la arquitectura de seguridad del proyecto y agregar nuevos servicios, se puede:
+
+- Implementar autenticación y autorización centralizadas: para garantizar la seguridad y el control de acceso a los nuevos servicios, se puede implementar una solución de autenticación y autorización centralizada. Esto implica la creación de un servicio de autenticación y autorización que se comunique con los demás servicios a través de una API segura.
+- Implementar OAuth 2.0: para permitir que los usuarios accedan a los nuevos servicios utilizando sus credenciales existentes, se puede implementar OAuth 2.0. OAuth 2.0 es un estándar de autorización abierto que permite a los usuarios compartir información entre diferentes servicios sin revelar sus credenciales.
+- Implementar cifrado de extremo a extremo: para garantizar la privacidad y la seguridad de los datos en tránsito entre los servicios, se puede implementar cifrado de extremo a extremo. Esto implica el uso de cifrado de extremo a extremo en las comunicaciones entre los servicios, lo que garantiza que los datos no puedan ser interceptados o leídos por terceros.
+- Implementar monitoreo y detección de intrusiones: para detectar y prevenir ataques de seguridad, se puede implementar monitoreo y detección de intrusiones. Esto implica la implementación de herramientas de monitoreo y detección de intrusiones que supervisen el tráfico de red y los eventos de seguridad en tiempo real.
+- Implementar pruebas de seguridad regulares: para garantizar la seguridad continua de los servicios, se pueden realizar pruebas de seguridad regulares. Esto implica la realización de pruebas de penetración y otras pruebas de seguridad para identificar y corregir vulnerabilidades de seguridad.
+
 ## Diseño
 
-El proyecto que has proporcionado parece ser una aplicación web escrita en Java utilizando el framework Spark para el backend y HTML/CSS/JavaScript para el frontend. Aquí tienes un resumen del diseño del proyecto:
+El proyecto es una aplicación web escrita en Java utilizando el framework Spark para el backend y HTML/CSS/JavaScript para el frontend. 
 
 --> Backend (Java/Spark):
 
@@ -63,7 +73,8 @@ El backend está escrito en Java utilizando el framework Spark, que es un framew
   
 --> Frontend (HTML/CSS/JavaScript):
 
-- El frontend está compuesto por un formulario de inicio de sesión HTML.
+ El frontend está compuesto por un formulario de inicio de sesión HTML.
+ 
 - Se utiliza CSS para estilizar el formulario y la página en general.
 - Se incorpora JavaScript para realizar una solicitud de inicio de sesión asincrónica utilizando fetch().
 - Se muestra un mensaje de respuesta en la página después de enviar el formulario de inicio de sesión.
@@ -114,12 +125,12 @@ java -cp "target/classes;target/dependency/*" co.edu.escuelaing.arep.UsuariosDB
 
  ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/a67f24e3-999d-41b0-8fcd-b335e81b2048)
 
-Despues teniendo ambas corriendo entramos al link de la página
+Después teniendo ambas corriendo entramos al link de la página
 
 ```
 https://localhost:5000/index.html
 ```
-**Tenga en cuenta** Que al abrir la pagina puede salir un mensaje diciendo que no es seguro , ignore el aviso y dele continuar aceptando el riesgo. Esto sucede por las llaves que se han generado, ignorar este aviso no hara ningun daño a su maquina.
+**Tenga en cuenta** Que al abrir la página puede salir un mensaje diciendo que no es seguro , ignore el aviso y dele continuar aceptando el riesgo. Esto sucede por las llaves que se han generado, ignorar este aviso no hará ningún daño a su máquina.
 
  ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/af35a25f-0eba-4fa8-a11c-f14162086a4b)
 
@@ -127,7 +138,7 @@ https://localhost:5000/index.html
 
 - *LOCAL*
 
-**Usuario Inexistente (Como vemos debemos dar al boton de volver al inicio para poder regresar a la pagina del login):**
+**Usuario Inexistente (Como vemos debemos dar al botón de volver al inicio para poder regresar a la página del login):**
 
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/bcc2efc2-02cf-4512-be2a-ce21666c7183)
 
@@ -145,6 +156,10 @@ https://localhost:5000/index.html
 
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/b71da068-e7b5-410e-bc84-5e9e1f570316)
 
+**No Digito la clave del usuario**
+
+![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/5789233d-6a96-44f6-8da2-65019cd4ec41)
+
 **Otros Usuarios:**
 
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/95fec903-edca-4df6-99e0-68fe9ca3cf03)
@@ -156,18 +171,29 @@ https://localhost:5000/index.html
 
 - *AWS*
 
-**Corriendo el proyecto en la maquina**
+**Corriendo el proyecto en la máquina**
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/6d2fb0da-ce92-46f0-88c7-de398bf952c6)
 
 
 **Prueba de Funcionamiento**
+
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/ea07f133-e148-4c8c-b8b0-db883ecf671b)
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/e96075dc-1a2a-4824-b123-3b8fdb0ded6f)
 
 
+- Prueba del Despliegue:
+  [VIDEO DESPLIEGUE AWS](https://youtu.be/QtokbNk622A)
 
+## Autores
 
+* **Mariana Pulido Moreno** - *Arep 101* - [MPulidoM](https://github.com/MPulidoM)
 
+## Construido con
+
+* [Maven](https://maven.apache.org/) - Gestión de dependencias
+* [Java](https://www.java.com/es/) - Lenguaje Utilizado
+* [GitHub](https://git-scm.com/) - Control de Versiones
+* [AWS](https://awsacademy.instructure.com/courses/58453/modules/items/5197637) - Despliegue
 
 
 
