@@ -14,8 +14,26 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
+
+/**
+ * Clase para leer contenido de una URL de forma segura utilizando SSL.
+ */
 public class SecureURLReader {
 
+
+     /**
+     * Lee el contenido de una URL de forma segura utilizando SSL y con autenticación básica.
+     *
+     * @param username El nombre de usuario para la autenticación básica.
+     * @param password La contraseña para la autenticación básica.
+     * @return El contenido de la URL como una cadena.
+     * @throws KeyStoreException Si ocurre un error al cargar el almacén de claves.
+     * @throws FileNotFoundException Si no se encuentra el archivo del almacén de claves.
+     * @throws IOException Si ocurre un error de entrada/salida al leer la URL.
+     * @throws NoSuchAlgorithmException Si el algoritmo SSL no está soportado.
+     * @throws CertificateException Si ocurre un error al cargar el certificado.
+     * @throws KeyManagementException Si ocurre un error al inicializar el contexto SSL.
+     */
     public static String secureReadUrl(String username, String password) {
         String secureResponse = "";
         try {
@@ -62,6 +80,13 @@ public class SecureURLReader {
         return secureResponse;
     }
 
+    /**
+     * Lee el contenido de una URL de forma no segura.
+     *
+     * @param siteToRead La URL a leer.
+     * @return El contenido de la URL como una cadena.
+     * @throws IOException Si ocurre un error de entrada/salida al leer la URL.
+     */
     public static String readURL(String sitetoread) {
         StringBuffer response = new StringBuffer();
         try {
