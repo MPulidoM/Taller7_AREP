@@ -7,9 +7,23 @@ import static spark.Spark.secure;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * Clase que representa una base de datos de usuarios en memoria.
+ */
 public class UsuariosDB {
+
+    /**
+     * Mapa que representa la base de datos de usuarios.
+     */
     private static Map<String, String> BD = new HashMap<>();
 
+     /**
+     * Método principal que inicializa la aplicación y configura las rutas de Spark.
+     *
+     * @param args Argumentos de la línea de comandos.
+     * @throws NoSuchAlgorithmException Si ocurre un error al crear el hasher de contraseñas.
+     */
     public static void main(String[] args) throws NoSuchAlgorithmException {
 
         BD.put("MarianaP", PasswordHasher.HashPassword("juniorluna21"));
@@ -151,6 +165,11 @@ public class UsuariosDB {
         });
     }
 
+     /**
+     * Obtiene el puerto en el que se ejecutará la aplicación.
+     *
+     * @return El puerto en el que se ejecutará la aplicación.
+     */
     private static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
