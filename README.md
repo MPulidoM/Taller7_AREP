@@ -23,5 +23,10 @@ java -cp "target/classes;target/dependency/*" co.edu.escuelaing.arep.HelloWorld
 
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/b71da068-e7b5-410e-bc84-5e9e1f570316)
 
+![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/95fec903-edca-4df6-99e0-68fe9ca3cf03)
+
+
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/56c76255-509c-470f-a304-6da0e508c9cf)
 ![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/860535b3-cdfc-44c6-bc56-93cd724d845c)
+![image](https://github.com/MPulidoM/Taller7_AREP/assets/118181543/0d935f46-d730-427e-be34-50fe8bd140df)
+
